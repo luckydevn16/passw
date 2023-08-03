@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Password Generator</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">FREE Password Generator</h1>
+		
+		<div class="form-block">
+			<form>
+  				<div class="form-group">
+    				<label for="param-1"><h3>Number of characters in the password - <span id="password-length"> 8</span></h3> </label>
+    				<input type="range" class="form-control" id="range" value="8" max="50">
+  				</div>
+				  <div class="form-group">
+					<h3>The password must contain:</h3>
+					<div class="checkbox">
+						<label> 
+							<input type="checkbox" id="numbers" checked> Digits
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="lower-letters" checked> Lower case
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="upper-letters"> Upper case
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" id="symbols"> Special symbols
+						</label>
+					</div>
+				  </div>
+  				<button type="button" id="generator" class="btn">Generate</button>
+			</form>
+		</div>
+
+		<div class="result-block">
+			<h3>5 options for your password:</h3>
+			<p>(click on each to copy)</p>
+			<div id="result-password" >
+				<ul>
+					<li class="password"></li>
+				</ul>
+			</div>
+		</div>
+	
+		<p class="copy">&copy; 2022 made by <span class="link"><a href="https://redhatdev16.github.io/portfolio/" target="_blank">redhatdev16</a></span><p>
+	</div>
+
+
+	
+	<script src="script.js"></script>
+</body>
+</html>

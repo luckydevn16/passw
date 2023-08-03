@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;500;700&display=swap');
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Jost', sans-serif;
+	font-weight: 200;
+	color: #ddd;
+	background: -o-linear-gradient(45deg, #000, rgb(47, 100, 247));
+	background: linear-gradient(45deg, #000, rgb(47, 100, 247));
+	min-height: 100vh;
+	padding: 2rem 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.container {
+	width: 90%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+h1 {
+	font-weight: 700;
+	text-align: center;
+	line-height: 120%;
+}
+.form-block, .result-block {
+	margin-top: 30px;
+}
+.form-group {
+	padding: 1rem;
+	border-radius: .5rem;
+	background-color: rgba(0,0,0,.4);
+	margin-bottom: 1rem;
+}
+.form-group h3 {
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+#password-length {
+	font-weight: 700;
+	font-size: 1.4em;
+}
+.form-control {
+	width: 100%;
+}
+.checkbox label input {
+	margin-right: 5px;
+}
+.checkbox label {
+	letter-spacing: 1px;
+}
+.btn {
+	width: 200px;
+	height: 40px;
+	background: #ca4d73;
+	color: #ddd;
+	font-size: 1.2em;
+	border: none;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+	cursor: pointer;
+	display: block;
+	margin: 1rem auto 0 auto;
+	border-radius: .5rem;
+}
+.btn:hover {
+	-webkit-box-shadow: 0 0 8px #e84393;
+	        box-shadow: 0 0 8px #e84393;
+}
+.result-block {
+	padding: 1rem;
+	border-radius: .5rem;
+	background-color: rgba(0,0,0,.4);
+	margin-bottom: 1rem;
+}
+.result-block h3 {
+	text-align: center;
+}
+.result-block p {
+	text-align: center;
+}
+#result-password li {
+	font-size: 1.2rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin: .5rem 0;
+	padding: 0.5rem .8rem;
+	background-color: rgb(37, 202, 133);
+	color: #333;
+	font-weight: 500;
+	border-radius: .5rem;
+	list-style: none;
+	text-align: center;
+	word-wrap: break-word;
+	transition: .2s;
+	cursor: pointer;
+}
+#result-password li:hover {
+	opacity: .8;
+}
+#result-password li:active {
+	opacity: .5;
+}
+.copy {
+	font-size: 0.8em;
+	margin-top: 10px;
+}
+.link {
+	color: #e84393
+}
